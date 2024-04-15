@@ -1,0 +1,31 @@
+
+*{
+    box-sizing: border-box;
+    &::after, &::before{
+        box-sizing: border-box;
+    }
+}
+
+strong{
+    font-weight: bold;
+}
+img{
+    max-width:100%;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.4rem;
+    background-color: rgba(209,231,207, 0.1);
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: #f2f2f2
+}
