@@ -1,0 +1,117 @@
+// About Me
+.about {
+    background-color: $vert-fonce;
+    padding: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    &__title{
+      @extend %title-section;
+
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: -16px;
+        //     left: calc(50% - 4px);
+        //     width: 8px;
+        //     height: 8px;
+        //     border-radius: 50%;
+        //     background-color: #25aceb;
+        //     -webkit-transition: all .7s cubic-bezier(.47, 0, .745, .715);
+        //     transition: all .7s cubic-bezier(.47, 0, .745, .715);
+        //     -webkit-animation: pulse2 1s infinite cubic-bezier(.66, 0, 0, 1);
+        //     animation: pulse2 1s infinite cubic-bezier(.66, 0, 0, 1);
+        //     -webkit-box-shadow: 0 0 0 0 rgba(22, 192, 240, .6);
+        //     box-shadow: 0 0 0 0 rgba(22, 192, 240, .6);
+
+        // }   
+    }
+
+    &__subtitle{
+        span{
+            color:$vert;
+        }
+        font-size: $font-size-medium;
+        font-family: 'Poppins';
+    }
+
+    &__description{
+        font-size: $font-size-paragraph;
+        color:$blanc;
+        font-family: 'Poppins';
+        line-height: 1.3;
+    }
+
+
+}
+
+// Skills
+.skills{
+    background-color: $comp1;
+    padding: 5rem 1.5rem;
+
+    &__title{
+        @extend %title-section;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top:6rem;
+
+        .skill{
+            margin-top:2rem;
+            flex-basis: 80vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1.2rem;
+            border: #7AA27C 2px solid;
+            border-radius: 10px;
+            gap:2rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        
+
+
+            &__image{
+                width: 10rem;
+            }
+
+            &__title{
+                color: $blanc;
+                font-size: $font-size-medium;
+                font-family: $font-family-general;
+                font-weight: 700;
+                margin-bottom: 1.2rem;;
+            }
+
+            &__description{
+                color: $blanc;
+                font-size: $font-size-paragraph;
+                font-family: $font-family-general;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+// Projects
+
+.projects{
+    padding: 5rem 1.5rem;
+    background-color: $vert-fonce;
+    &__title{
+        @extend %title-section;
+    }
+
+    &__subtitle{
+        margin-top:3rem;
+        font-size: $font-size-paragraph;
+        font-family: $font-family-general;
+        line-height: 1.3;
+        color:$blanc;
+    }
+}

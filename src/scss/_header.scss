@@ -1,0 +1,96 @@
+.header{
+    min-height:90vh;
+    background-image: url('../assets/images/background-header.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Reem Kufi', sans-serif;
+        padding: 0.4rem 1.2rem;
+    }
+
+    &__name{
+        color:$blanc;
+        font-size: $font-size-medium;
+        &-prefix{
+            color:$vert;
+        }
+    }
+
+    &__burger{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap:0.5rem;
+        &-bar{
+            width: 25px;
+            height: 3px;
+            border-radius: 20px;;
+            background-color:$vert;
+            &:nth-child(2){
+                width: 20px;
+            }
+            &:nth-child(3){
+                width: 15px;
+            }
+        }
+    }
+    
+    &__main{
+        display: flex;
+        flex-direction: column;
+        gap:2.4vh;
+        padding: 0 1.2rem;
+    }
+
+    &__introduction{
+        font-size: $font-size-extra-large;
+        margin-top:8rem;
+        width: 70%;
+        color:$vert;
+        font-family: 'Reggae One', sans-serif;
+    }
+
+    &__profession{
+        color:$blanc;
+        font-size: $font-size-title;
+        font-family: 'Reem Kufi', sans-serif;
+        width: 70%;
+
+    }
+
+    &__links{
+        display: flex;
+        gap:2.4rem;
+        font-family: $font-family-kufi;
+        font-size: $font-size-paragraph;
+
+    }
+
+    &__link{
+        min-width: 13rem;
+        text-align: center;
+        padding: 0.5rem 0;
+        &:first-child{
+            background-color: $vert;
+        }
+
+        &:nth-child(2){
+            border: 2px $vert solid;
+            color:$vert
+        }
+    }
+
+    &__social-media{
+        display: flex;
+        gap:1rem;
+        max-width: 35%;
+        &-item{
+            flex: 1;
+        }
+    }
+
+    
+}
