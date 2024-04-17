@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Import des icones de réseaux
 import facebookIcon from '../assets/social-networks/facebookIcon.png'
@@ -7,13 +7,20 @@ import gitHubIcon from '../assets/social-networks/githubIcon.png'
 import linkedinIcon from '../assets/social-networks/LinkedinIcon.png'
 
 
-const Header = () => {
-    return  <header className="header">
+const Header = ({toggleMenu}) => {
+
+    const [openMenu, setOpenMenu] = useState(false);
+    const handleClick = () => {
+        setOpenMenu(!openMenu)
+        toggleMenu();
+    }
+
+    return  <header className="header" id="home">
                 <div className="header__top">
                     <p className="header__name">
                         <span className="header__name-prefix">Ma</span>rilyne
                     </p>
-                    <div className="header__burger">
+                    <div className={`header__burger ${openMenu ? 'open': ''} `} onClick={()=>handleClick()}>
                         <span className="header__burger-bar"></span>
                         <span className="header__burger-bar"></span>
                         <span className="header__burger-bar"></span>

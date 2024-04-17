@@ -41,7 +41,7 @@ const Skills = () => {
                                                 description: "En tant que designer UX passionnée, je continue à développer mes compétences dans la création d'expériences utilisateur qui visent à être à la fois intuitives et captivantes. J'exploite des outils tels qu'Adobe XD pour élaborer des wireframes et des prototypes qui servent de fondations à des solutions design bien pensées."
                                             }
                                         ])
-    return <section className="skills">
+    return <section className="skills" id="skills">
             <h2 className="skills__title">Mes compétences</h2>
             
             <div className="skills__list">

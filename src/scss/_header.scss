@@ -3,17 +3,21 @@
     background-image: url('../assets/images/background-header.png');
     background-repeat: no-repeat;
     background-position: center center;
+   
+
     &__top{
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-family: 'Reem Kufi', sans-serif;
         padding: 0.4rem 1.2rem;
+         position: relative;
+        z-index: 3;
     }
 
     &__name{
         color:$blanc;
-        font-size: $font-size-medium;
+        font-size: $font-size-title;
         &-prefix{
             color:$vert;
         }
@@ -25,16 +29,41 @@
         align-items: flex-end;
         gap:0.5rem;
         &-bar{
-            width: 25px;
-            height: 3px;
-            border-radius: 20px;;
+            width: 28px;
+            height: 0.30rem;
+            border-radius: 1px;;
             background-color:$vert;
+            transition: all .3s ease-out;
             &:nth-child(2){
-                width: 20px;
+                width: 22px;
             }
             &:nth-child(3){
                 width: 15px;
             }
+        }
+
+        &.open &-bar{
+        
+                &:nth-child(1){
+                    transform: rotate(45deg) translate(10px, 0.34em);
+                    transition: transform .3s ease-out;
+                }
+
+                &:nth-child(2){
+                    
+                    opacity: 0;
+                    width: 0;
+                    transform: translateX(100%);
+                    transition: width .2s ease-in-out, opacity .1s ease-in-out .1s;
+                }
+
+                &:nth-child(3){
+                    width: 28px;
+                    transform: rotate(-45deg) translate(5px, 0px); 
+                    transition: transform .3s ease-out
+                                width .2s ease-out;
+                }
+
         }
     }
     
