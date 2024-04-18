@@ -6,8 +6,12 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
+    &.open {
+        z-index: 1;
+    }
 
-
+ 
     .curtain{
         position: absolute;
         top:0;
@@ -42,6 +46,7 @@
         color:$blanc;
         transform: translate(-50%, -50%) ;
         z-index: 2;
+ 
     }
 
     &__links{
@@ -51,11 +56,19 @@
     }
 
     &__link{
-        font-size: $font-size-extra-large;
-        font-family: $font-family-general;
+        font-size: 4rem;
+        font-family: $font-family-subtitle;
         font-weight: 700;
         color:$blanc;
         text-transform: uppercase;
         letter-spacing: 1px;
+        cursor: pointer;
+        transition : .2s all ease-in-out;
+        
+        &:hover{
+            color: transparent;  
+            -webkit-text-stroke : 1px $vert;
+            transition : .2s all ease-in-out
+        }
     }
 }

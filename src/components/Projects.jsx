@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import portfolio from '../assets/images/portfolio.png'
 import artfullCode from '../assets/images/artfullcode.png'
 import lettreenlumiere from '../assets/images/lettreenlumiere.png'
-import nextIcon from '../assets/icons/github.svg'
+import nextIcon from '../assets/icons/next.svg'
 import githubIcon from '../assets/icons/github.svg'
+
+
+
 const Projects = () => {
 
     const [projects, setProjects] = useState([
@@ -34,7 +37,7 @@ const Projects = () => {
     return <section className="projects" id="projects">
                 <h2 className="projects__title">Mes projets</h2>
                 <h3 className="projects__subtitle">Explorez mes réalisations et voyez comment je transforme les idées en solutions digitales impactantes. Chaque projet est une histoire de défi et de réussite. Voici les miennes.</h3>
-
+                
                 <div className="projects__list">
                     {
                         projects.map(project => {
@@ -43,8 +46,8 @@ const Projects = () => {
                                     <div className="project__top">
                                         <p className="project__title">{project.title}</p>
                                         <div className="project__links">
-                                            <img src={nextIcon} alt="Aller vers le site" className="project__link project__link--next"/>
-                                            <img src={githubIcon} alt="Aller vers le site" className="project__link project__link--github"/>
+                                            <a href={project.link} target="_blank" rel="noopener noreferrer"><img src={nextIcon} alt="Aller vers le site" className="project__link project__link--next" /></a>
+                                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Aller vers le site" className="project__link project__link--github"/></a>
                                         </div>
                                     </div>
                                     <p className="project__description">
@@ -54,6 +57,7 @@ const Projects = () => {
                         })
                     }
                 </div>
+  
             </section>
 }
 

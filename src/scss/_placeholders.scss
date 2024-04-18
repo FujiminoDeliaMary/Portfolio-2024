@@ -1,7 +1,8 @@
 %title-section{
     position: relative;
     font-size: $font-size-title;
-    font-family: 'Minomu', sans-serif;
+    font-family: $font-family-title;
+    font-weight: bold;
     text-transform: uppercase;
     color:$blanc;
     width: fit-content;

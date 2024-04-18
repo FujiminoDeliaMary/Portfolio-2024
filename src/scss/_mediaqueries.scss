@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) { /* Pour les tablettes */
+    .projects{
+        &__list{
+            padding: 0 5rem;
+            .project {
+                flex-basis: 35%; 
+            }
+        }
+    }
+
+    .skills{
+        &__list{
+            padding: 0 5rem;
+            .skill {
+                flex-basis: 35%; 
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width: 1200px) { /* Pour les grands écrans */
+   .header{
+        &__main{
+            padding-left:6rem;
+            gap:5vh;
+        }
+   }
+
+   .about{
+        flex-direction: row-reverse;
+        gap:5vw;
+        padding: 5rem 5.15rem;
+   }
+
+   .skills{
+
+        .skill{
+            flex-basis: 25%;
+        }
+   }
+
+   .projects{
+        .project {
+            flex-basis: 25%; 
+        }
+   }
+
+   .contact{
+
+    &__form{
+        width: 40%;
+    }
+
+   }
+  }

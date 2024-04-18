@@ -10,14 +10,15 @@ $grey : #C6CABE;
 
 // Font-size
 $font-size-extra-large : 3rem;
-$font-size-title : 2.4rem;
-$font-size-medium : 2rem;
-$font-size-paragraph : 1.48rem;
+$font-size-title: clamp(27px, 2.67vw, 74px);
+
+$font-size-medium : clamp(18px, 1.44vw, 60px);
+$font-size-paragraph : clamp(14px,1.1vw, 45px);
 
 
 // Font-family
 
 $font-family-kufi : 'Reem Kufi', sans-serif;
-$font-family-reggae : 'Reggae One', sans-serif;
 $font-family-poppins : 'Poppins', sans-serif;
-$font-family-general : 'General Sans', sans-serif
+$font-family-subtitle : 'General Sans', sans-serif;
+$font-family-title : 'Hind', sans-serif;

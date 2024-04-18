@@ -7,38 +7,46 @@
 
     &__top{
         display: flex;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
         justify-content: space-between;
         align-items: center;
         font-family: 'Reem Kufi', sans-serif;
-        padding: 0.4rem 1.2rem;
-         position: relative;
+        padding: 1em 1.5rem;
+    
         z-index: 3;
     }
 
     &__name{
         color:$blanc;
-        font-size: $font-size-title;
+        cursor: pointer;
+        font-size: $font-size-extra-large;
         &-prefix{
             color:$vert;
         }
     }
 
     &__burger{
+        
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        cursor: pointer;
         gap:0.5rem;
+        margin-left: auto;
         &-bar{
-            width: 28px;
+            width: 3em;
             height: 0.30rem;
-            border-radius: 1px;;
+     ;
             background-color:$vert;
             transition: all .3s ease-out;
             &:nth-child(2){
-                width: 22px;
+                width: 2.2em;
             }
             &:nth-child(3){
-                width: 15px;
+                width: 1.5em;
             }
         }
 
@@ -58,7 +66,7 @@
                 }
 
                 &:nth-child(3){
-                    width: 28px;
+                    width:3em;
                     transform: rotate(-45deg) translate(5px, 0px); 
                     transition: transform .3s ease-out
                                 width .2s ease-out;
@@ -75,11 +83,12 @@
     }
 
     &__introduction{
-        font-size: $font-size-extra-large;
-        margin-top:8rem;
+        margin-top: 8rem;;
+        font-size: clamp(37px, 5vw,80px);
         width: 70%;
         color:$vert;
-        font-family: 'Reggae One', sans-serif;
+        font-family: 'Hind', sans-serif;
+        font-weight: bold;
     }
 
     &__profession{
@@ -99,9 +108,10 @@
     }
 
     &__link{
-        min-width: 13rem;
+        min-width: clamp(50px,25vw, 147px);
         text-align: center;
-        padding: 0.5rem 0;
+        padding: 0.7rem 0;
+        cursor: pointer;
         &:first-child{
             background-color: $vert;
         }
@@ -115,9 +125,10 @@
     &__social-media{
         display: flex;
         gap:1rem;
-        max-width: 35%;
+
         &-item{
-            flex: 1;
+            
+            width: 3rem;;
         }
     }
 

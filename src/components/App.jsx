@@ -14,8 +14,8 @@ const App = () => {
     const closeMenu = () => setMenuOpen(false);
 
     return <>
-        <Menu isOpen={isMenuOpen} closeMenu={closeMenu}/>
-        <Header toggleMenu = {toggleMenu}/>
+        <Menu isOpen={isMenuOpen} closeMenu={closeMenu} toggleMenu = {toggleMenu}/>
+        <Header toggleMenu = {toggleMenu} isOpen={isMenuOpen}/>
         <main>
             <About />
             <Skills />

@@ -5,6 +5,7 @@ import bdIcon from '../assets/images/bd.png'
 import github from '../assets/images/github.png'
 import uxdesignIcon from '../assets/images/UX.png'
 import wordpressIcon from '../assets/images/wordpress.png'
+import { Zoom } from "react-awesome-reveal";
 
 
 const Skills = () => {
@@ -47,13 +48,17 @@ const Skills = () => {
             <div className="skills__list">
                 {
                     skills.map(skill => {
-                        return  <figure className="skill">
-                                    <img src={skill.img} alt="" className="skill__image"/>
-                                    <figcaption>
-                                        <p className="skill__title">{skill.title}</p>
-                                        <p className="skill__description">{skill.description}</p>
-                                    </figcaption>
-                                </figure>
+                        return   <figure className="skill">
+                                        <Zoom triggerOnce={true}>
+                                            <img src={skill.img} alt="" className="skill__image"/>
+                                            <figcaption>
+                                                <p className="skill__title">{skill.title}</p>
+                                                <p className="skill__description">{skill.description}</p>
+                                            </figcaption>
+                                        </Zoom>
+                                    </figure>
+                     
+                      
                     })
                 }
             </div>
