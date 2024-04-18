@@ -2,6 +2,7 @@ import React from "react";
 import phoneIcon from '../assets/icons/phonepng.png';
 import mailIcon from '../assets/icons/mail.svg';
 import locationIcon from '../assets/icons/location.svg'
+import { Link } from "react-scroll";
 
 const Footer = () => {
     return <footer className="footer">
@@ -19,7 +20,7 @@ const Footer = () => {
                         <p >La rochelle 17000</p>
                     </div>
                 </div>
-                <p className="footer__credits">Design and made by <span className="footer__credits--green">Marilyne TSENE</span>. All rights reserved</p>
+                <p className="footer__credits">Designed and developed by <Link to="home"><span className="footer__credits--green">Marilyne TSENE</span> avec ReactJs, Framer Motion , Figma, et du redBull</Link>.<br></br><br></br> All rights reserved.</p>
             </footer>
 }
 

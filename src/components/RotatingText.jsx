@@ -5,7 +5,7 @@ function RotatingText() {
     const [wordIndex, setWordIndex] = useState(0);
     const [letters, setLetters] = useState([]);
 
-    const roles = useMemo(() => ["Amatrice de manga", "RedBullolic", "Developpeuse Front-end", "Developpeuse Full Stack"], []);
+    const roles = useMemo(() => ["Amatrice de manga", "RedBullolic", "Developpeuse Wordpress", "Coffeeollic", "Developpeuse Full Stack"], []);
 
     useEffect(() => {
         const currentLetters = roles[wordIndex].split('').map(char => char === ' ' ? '\u00A0' : char); // Remplace les espaces par &nbsp;

@@ -17,11 +17,11 @@ const Menu = ({ isOpen, closeMenu, toggleMenu }) => {
                 {isOpen && (
                     <Fade cascade delay={700} damping={0.2}>
                         <ul className="menu__links">
-                            <li><Link to="home" smooth={true} spy={true} className="menu__link" onClick={handleClick}>Home</Link></li>
-                            <li><Link to="about" smooth={true} spy={true} className="menu__link" onClick={handleClick}>A propos</Link></li>
-                            <li><Link to="skills" smooth={true} spy={true} className="menu__link" onClick={handleClick}>Compétences</Link></li>
-                            <li><Link to="projects" smooth={true} spy={true} className="menu__link"onClick={handleClick}>Projets</Link></li>
-                            <li><Link to="contact" smooth={true} spy={true} className="menu__link" onClick={handleClick}>Contact</Link></li>
+                            <li><Link to="home"  spy={true} className="menu__link" onClick={handleClick}>Home</Link></li>
+                            <li><Link to="about"  spy={true} className="menu__link" onClick={handleClick}>A propos</Link></li>
+                            <li><Link to="skills"  spy={true} className="menu__link" onClick={handleClick}>Compétences</Link></li>
+                            <li><Link to="projects"  spy={true} className="menu__link"onClick={handleClick}>Projets</Link></li>
+                            <li><Link to="contact"  spy={true} className="menu__link" onClick={handleClick}>Contact</Link></li>
                         </ul>
                     </Fade>
                 )}

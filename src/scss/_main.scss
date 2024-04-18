@@ -34,7 +34,7 @@
             color:$vert;
         }
         font-size: $font-size-medium;
-        font-family: 'Poppins';
+        font-family: $font-family-subtitle
     }
 
     &__description{
@@ -137,6 +137,7 @@
     }
 
     &__subtitle{
+
         margin:3rem 0;
         font-size: $font-size-medium;
         font-family: $font-family-subtitle;
@@ -320,6 +321,7 @@
         &--green{
             color:$vert;
             font-weight: 700;
+            cursor: pointer;
         }
     }
 }
