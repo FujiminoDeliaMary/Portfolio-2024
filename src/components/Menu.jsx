@@ -1,8 +1,10 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-scroll";
+import { useTranslation } from 'react-i18next';  // Import the hook
 
-const Menu = ({ isOpen, closeMenu, toggleMenu }) => {  
+const Menu = ({ isOpen, closeMenu, toggleMenu }) => {
+    const { t } = useTranslation(); 
 
     const handleClick = () => {
         closeMenu();
@@ -17,11 +19,11 @@ const Menu = ({ isOpen, closeMenu, toggleMenu }) => {
                 {isOpen && (
                     <Fade cascade delay={700} damping={0.2}>
                         <ul className="menu__links">
-                            <li><Link to="home"  spy={true} className="menu__link" onClick={handleClick}>Home</Link></li>
-                            <li><Link to="about"  spy={true} className="menu__link" onClick={handleClick}>A propos</Link></li>
-                            <li><Link to="skills"  spy={true} className="menu__link" onClick={handleClick}>Compétences</Link></li>
-                            <li><Link to="projects"  spy={true} className="menu__link"onClick={handleClick}>Projets</Link></li>
-                            <li><Link to="contact"  spy={true} className="menu__link" onClick={handleClick}>Contact</Link></li>
+                            <li><Link to="home" spy={true} className="menu__link" onClick={handleClick}>{t('home')}</Link></li>
+                            <li><Link to="about" spy={true} className="menu__link" onClick={handleClick}>{t('about')}</Link></li>
+                            <li><Link to="skills" spy={true} className="menu__link" onClick={handleClick}>{t('skills')}</Link></li>
+                            <li><Link to="projects" spy={true} className="menu__link" onClick={handleClick}>{t('projects')}</Link></li>
+                            <li><Link to="contact" spy={true} className="menu__link" onClick={handleClick}>{t('contact')}</Link></li>
                         </ul>
                     </Fade>
                 )}

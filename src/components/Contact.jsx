@@ -1,24 +1,27 @@
 import React from "react";
-import sendIcon from '../assets/icons/send.svg'
+import sendIcon from '../assets/icons/send.svg';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-    return <section className="contact" id="contact">
-        <h2 className="contact__title">
-            Prêt à collaborer ? Contactez-moi pour discuter de votre projet ou simplement pour échanger sur vos idées.
-        </h2>
-        <form action="" className="contact__form">
-            <input type="text" placeholder="Entrez votre nom" className="contact__input"/>
-            <input type="text" placeholder="Entrez votre email" className="contact__input"/>
-            <input type="text" placeholder="Sujet" className="contact__input"/>
-            <textarea name="" id="" cols="20" rows="10" placeholder="Entrez votre message" className="contact__textarea"></textarea>
+    const { t } = useTranslation();
 
-            <button type="submit" className="contact__submit">
-            Envoyer <img src={sendIcon} alt="Envoyer" />
-            </button>
-        </form>
+    return (
+        <section className="contact" id="contact">
+            <h2 className="contact__title">
+                {t('contactTitle')}
+            </h2>
+            <form action="" className="contact__form">
+                <input type="text" placeholder={t('enterYourName')} className="contact__input"/>
+                <input type="text" placeholder={t('enterYourEmail')} className="contact__input"/>
+                <input type="text" placeholder={t('subject')} className="contact__input"/>
+                <textarea cols="20" rows="10" placeholder={t('enterYourMessage')} className="contact__textarea"></textarea>
 
-       
-    </section>
+                <button type="submit" className="contact__submit">
+                    {t('send')} <img src={sendIcon} alt={t('send')} />
+                </button>
+            </form>
+        </section>
+    );
 }
 
 export default Contact;

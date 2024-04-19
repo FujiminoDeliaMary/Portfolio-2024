@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "./static/css/main.8632ad79.css",
+    "main.js": "./static/js/main.340c2762.js",
+    "static/js/453.82f94ecc.chunk.js": "./static/js/453.82f94ecc.chunk.js",
+    "static/media/background-contact.png": "./static/media/background-contact.3bd3bcd4ba7a5e039f6a.png",
+    "static/media/artfullcode.png": "./static/media/artfullcode.d7df349c700741d655f6.png",
+    "static/media/background-header.png": "./static/media/background-header.77c678867e02fb6ffd75.png",
+    "static/media/portfolio.png": "./static/media/portfolio.6b92ae95b59ef020eb6c.png",
+    "static/media/wordpress.png": "./static/media/wordpress.8be7749da6c714d49c9d.png",
+    "static/media/MADE TOMMY Medium Outline_PERSONAL USE.otf": "./static/media/MADE TOMMY Medium Outline_PERSONAL USE.9ddbb49204542454a4a9.otf",
+    "static/media/front-end.jpg": "./static/media/front-end.fa3356cadaa9430752c7.jpg",
+    "static/media/facebookIcon.png": "./static/media/facebookIcon.0bd5e676b6441a434cef.png",
+    "static/media/lettreenlumiere.png": "./static/media/lettreenlumiere.e5e47e964418a1be6e7a.png",
+    "static/media/githubIcon.png": "./static/media/githubIcon.345dc4a21070f9083ca7.png",
+    "static/media/profil.png": "./static/media/profil.929dab4dcd3d99915e10.png",
+    "static/media/LinkedinIcon.png": "./static/media/LinkedinIcon.a810ca804e5f46a89e56.png",
+    "static/media/github.png": "./static/media/github.c2c1684c95ee51ed6e44.png",
+    "static/media/GeneralSans-Regular.woff": "./static/media/GeneralSans-Regular.c8cfd56b3d5c42904672.woff",
+    "static/media/GeneralSans-Bold.woff": "./static/media/GeneralSans-Bold.4d82f8e0a57d7f8de158.woff",
+    "static/media/GeneralSans-Regular.woff2": "./static/media/GeneralSans-Regular.33c07568e483102927ef.woff2",
+    "static/media/backend.png": "./static/media/backend.faf47c30539965ca7316.png",
+    "static/media/GeneralSans-Bold.woff2": "./static/media/GeneralSans-Bold.64b1bf9966a3bbb94f5c.woff2",
+    "static/media/bd.png": "./static/media/bd.5e3b5590caf1517d7973.png",
+    "static/media/instagram.png": "./static/media/instagram.75e0546a6b5abe4c0506.png",
+    "static/media/UX.png": "./static/media/UX.cf79196aed6713fecb27.png",
+    "static/media/MinomuBold-rgXoO.otf": "./static/media/MinomuBold-rgXoO.5f639bb88ff7fb35b78c.otf",
+    "static/media/github.svg": "./static/media/github.0cdc91d5cb1bba395b7ee7dc42013653.svg",
+    "static/media/next.svg": "./static/media/next.d1775574b8e92e7203d8d210939842b0.svg",
+    "static/media/mail.svg": "./static/media/mail.667cf1c206ca696b87ee937707f3cce4.svg",
+    "index.html": "./index.html",
+    "static/media/location.svg": "./static/media/location.fb0ae5454b060e4d890b2a9d940522ab.svg",
+    "static/media/send.svg": "./static/media/send.788b571364982c574b12b7c29969262d.svg",
+    "main.8632ad79.css.map": "./static/css/main.8632ad79.css.map",
+    "main.340c2762.js.map": "./static/js/main.340c2762.js.map",
+    "453.82f94ecc.chunk.js.map": "./static/js/453.82f94ecc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8632ad79.css",
+    "static/js/main.340c2762.js"
+  ]
+}

@@ -19,6 +19,21 @@
         z-index: 3;
     }
 
+    &__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1rem
+    }
+
+    &__select{
+        font-size: $font-size-paragraph;
+        font-family: $font-family-subtitle;
+        background-color: transparent;
+        color:$blanc;
+        border: 2px solid $vert
+    }
+
     &__name{
         color:$blanc;
         cursor: pointer;
@@ -53,7 +68,8 @@
         &.open &-bar{
         
                 &:nth-child(1){
-                    transform: rotate(45deg) translate(10px, 0.34em);
+                    width:2.5em;
+                    transform: rotate(45deg) translate(10px, 0.44em);
                     transition: transform .3s ease-out;
                 }
 
@@ -66,7 +82,7 @@
                 }
 
                 &:nth-child(3){
-                    width:3em;
+                    width:2.5em;
                     transform: rotate(-45deg) translate(5px, 0px); 
                     transition: transform .3s ease-out
                                 width .2s ease-out;

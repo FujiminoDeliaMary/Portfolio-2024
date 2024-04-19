@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './scss/style.scss';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import './i18next'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
